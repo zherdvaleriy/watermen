@@ -4,13 +4,99 @@
 // to customize it as you may want.
 
 //importing the partial scss file: _variables.scss
-@use "variables";
+@use "variables" as *;
 
 //importing bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
 
-h1 {
-  color: tomato;
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+body{
+  background-color: $bg2-color;
+  background-image: url(https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: $primary-color;
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/30/12/37/jellyfish-698521_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11vh;
+    z-index: 100;
+  h2{
+    font-family:"Seymour One",sans-serif ;
+    color: $secondary-color;
+    // outline: 2px solid rgb(10, 57, 28);
+    // outline-offset: .2em;
+    
+  }
+
+  ul{
+    list-style-type: none;
+    font-family: "Lato",Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    gap: 1em;
+  }
+
+  a{
+    text-decoration: none;
+    color: $bg1-color;
+  }
+
+  @media (width<450px) {
+    ul{
+      display: block;
+    }
+  }
+}
+
+main{
+  padding-top: 110px;
+  .container{
+    min-height: 100vh;
+  }
+}
+
+footer{
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: $footer-color;
+  padding: 0 1rem;
+
+  .social-media{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    padding-right: 2rem;
+
+    a{
+      color: #fff;
+    }
+  }
+
+  @media (width<400px) {
+    flex-direction: column;
+    .social-media{
+      justify-content: center;
+      padding-right: 0;
+    }
+  }
 }
