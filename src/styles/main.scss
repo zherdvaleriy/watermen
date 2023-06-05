@@ -57,7 +57,7 @@ header{
     gap: 1em;
     position: relative;
 
-   
+    
 
 
     .container1{
@@ -70,20 +70,7 @@ header{
       place-items: center;
       background-color: $pri;
       z-index: -1;
-      //display: none;
-      opacity: 0;
-
-      
-    }
-
-    .content:focus+.container1{
-      opacity: 1;
-      display: block;
-    }
-    .content:hover+.container1{
-      
-      opacity: 1;
-      display: block;
+      display: none;
     }
     
     .items {
@@ -119,10 +106,15 @@ header{
         a:hover{
           color: $bg2-color;
           text-decoration: none;
+          background-color: $primary-color;
+          opacity: 60%;
+          padding: 5px 25px 5px 10px;
+          border-radius: 10px;
           font-size: 1.3rem;
-          transition: .3s;
+          transition: .4s;
           
         }
+       
       }
     }
 
@@ -372,9 +364,12 @@ footer{
       color: #fff;
 
       &:hover{
+        text-shadow:0px 0px 30px rgb(151, 151, 148), 2px 2px 40px #e3e055,-2px -8px 30px #e3e055,5px 5px 40px #bd6dd1,-5px -10px 50px #bd6dd1 ;
+        box-shadow: 0px 0px 30px rgb(151, 151, 148), 2px 2px 40px #e3e055,-2px -8px 30px #e3e055,5px 5px 40px #bd6dd1,-5px -10px 50px #bd6dd1;
+        background-color: #878432;
+        color: $fourth-color;
+        transition: .3s;
         
-        box-shadow: 0px 0px 20px rgb(238, 238, 230);
-        background-color: none;
       
       }
 
@@ -466,7 +461,7 @@ footer{
 
   div{
 
-    content: "Hi";
+    content: "";
     position: absolute;
     bottom: -37px;
     right: -45px;
