@@ -70,7 +70,14 @@ header{
       place-items: center;
       background-color: $pri;
       z-index: -1;
-      display: none;
+      opacity: 0;
+      
+    }
+    .content:hover+ .container1{
+      opacity: 1;
+    }
+    .content:focus+ .container1{
+      opacity: 1;
     }
     
     .items {
