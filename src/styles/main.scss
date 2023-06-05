@@ -57,25 +57,33 @@ header{
     gap: 1em;
     position: relative;
 
-    .content:focus+.container1{
-      display: block;
-    }
-    .content:hover+.container1{
-      display: block;
-    }
+   
 
 
     .container1{
       
       position: absolute;
-      top: 3rem; right: 0; bottom: 0; left: 4rem;
+      top: 2.5rem; right: 0; bottom: 0; left: 4rem;
       margin: auto;
       
       display: grid;
       place-items: center;
       background-color: $pri;
       z-index: -1;
-      display: none;
+      //display: none;
+      opacity: 0;
+
+      
+    }
+
+    .content:focus+.container1{
+      opacity: 1;
+      display: block;
+    }
+    .content:hover+.container1{
+      
+      opacity: 1;
+      display: block;
     }
     
     .items {
@@ -130,6 +138,8 @@ header{
       grid-gap: 10px;
       border: 1px solid transparent;
       cursor: pointer;
+
+      
       
     }
     
@@ -145,6 +155,8 @@ header{
       font-weight: bold;
       animation: icon 1.5s infinite forwards;
     }
+
+ 
     
     @keyframes icon {
       0%,100%{
