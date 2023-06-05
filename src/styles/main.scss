@@ -1,5 +1,6 @@
 
 @use "variables" as *;
+@use "base" as *;
 
 //importing bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -33,9 +34,6 @@ header{
     height: 11vh;
     z-index: 100;
 
-    
-
-  
 
 
   h2{
@@ -57,8 +55,7 @@ header{
     gap: 1em;
     position: relative;
 
-    
-
+  
 
     .container1{
       
@@ -76,9 +73,11 @@ header{
     .content:hover+ .container1{
       opacity: 1;
     }
+
     .content:focus+ .container1{
       opacity: 1;
     }
+
     
     .items {
       width: 300px;
@@ -86,6 +85,7 @@ header{
       box-shadow: 0 10px 6px rgba(black,0.16), 0 3px 6px rgba(black,0.23);
       border-top: 10px solid $dark-pri;
     }
+
     
     .items-head p{
       padding: 5px 20px;
@@ -94,12 +94,14 @@ header{
       font-weight: bold;
       font-size: 20px;
     }
+
     
     .items-head hr {
       width: 20%;
       margin: 0px 30px;
       border: 1px solid $dark-pri;
     }
+
     
     .items-body {
       padding: 10px;
@@ -146,6 +148,7 @@ header{
       border-radius: 15px;
       border: 1px solid $dark-pri;
     }
+
     
     .items-body-content i {
       align-self: center;
@@ -168,6 +171,7 @@ header{
 
   }
 
+
   a{
 
     text-decoration: none;
@@ -177,6 +181,7 @@ header{
       text-decoration: underline;
     }
   }
+
 
   @media (width<570px) {
     ul{
@@ -227,6 +232,7 @@ main{
           animation-iteration-count: infinite;
           animation-direction: alternate;
       }
+      
       @keyframes ani {
           from {
               background-position: 0 0;
@@ -278,7 +284,6 @@ main{
       fill: #3271a8;
     }
 
-  
 
 
   .container{
@@ -289,7 +294,15 @@ main{
       text-decoration: underline;
 
       &:hover{
-        color: #fff;
+        color: #fff; @media (width<780px) {
+      .carousel-caption h1{
+        font-size: 1rem;
+      }
+      .carousel-caption p{
+        font-size: 1rem;
+      }
+      
+    }
       }
     }
 
@@ -363,7 +376,7 @@ footer{
 
   .social-media{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     font-size: 1.7rem;
     padding-right: 2rem;
 
@@ -385,7 +398,7 @@ footer{
    
   }
 
-  @media (width<700px) {
+  @media (width<850px) {
     flex-direction: column;
     .social-media{
       justify-content: center;
