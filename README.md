@@ -2,7 +2,7 @@
 
 # [WATERMEN]() project
 
-![GIF](https://media.giphy.com/media/8cnCDmKV1AbxxfoS5l/giphy-downsized-large.gif)
+![GIF](/src/images/Fq.gif)
 
 >"Water and air, the two essential fluids on which  all life depends, have become global garbage cans."
 
