@@ -2,7 +2,7 @@
 
 # [WATERMEN]() project
 
-![](https://media.giphy.com/media/8cnCDmKV1AbxxfoS5l/giphy-downsized-large.gif)
+![GIF](https://media.giphy.com/media/8cnCDmKV1AbxxfoS5l/giphy-downsized-large.gif)
 
 >"Water and air, the two essential fluids on which  all life depends, have become global garbage cans."
 
@@ -11,7 +11,7 @@
 _The whole project consists of five pages: the main one and four additional which are describing in detail the staff._
 ## Main Page
 
-![](https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg)
+![image](https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg)
 ---
 - Short description of the water world on our planet
 - Some interesting facts about oceans on the ___Earth___ (using images from free internet-resources)
