@@ -1,7 +1,10 @@
 
 
 main{
+
+
     .pouring{
+
         padding: 2rem 0;
         font-size: 50px;
         line-height: 70px;
@@ -13,7 +16,17 @@ main{
         text-transform: uppercase;
         text-align: center;
 
+
+        @media (width<400px) {
+            margin-left: 1.3rem;
+            font-size: 40px;
+           
+            
+        }
+
+
          &:before {
+
             content: '';
             position: absolute;
             filter: blur(10px);
@@ -29,7 +42,10 @@ main{
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             animation-direction: alternate;
+
         }
+
+
         @keyframes ani {
             from {
                 background-position: 0 0;
@@ -42,7 +58,7 @@ main{
             .pouring {font-size: 20px;}    
         }
     }
-
+    
     padding-top: 95px;
     .card{
         img{
