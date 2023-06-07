@@ -70,11 +70,11 @@ header{
       opacity: 0;
       
     }
-    .content:hover+ .container1{
+    .content:hover + .container1{
       opacity: 1;
     }
 
-    .content:focus+ .container1{
+    .content:focus + .container1{
       opacity: 1;
     }
 
@@ -152,10 +152,10 @@ header{
     
     .items-body-content i {
       align-self: center;
-      font-size: 15px;
+      font-size: 18px;
       color: $dark-pri;
       font-weight: bold;
-      animation: icon 1.5s infinite forwards;
+      animation: icon 1.3s infinite forwards;
     }
 
  
@@ -165,7 +165,7 @@ header{
         transform: translate(0px);
       }
       50% {
-        transform: translate(3px);
+        transform: translate(5px);
       }
     }
 
@@ -306,8 +306,6 @@ main{
       }
     }
 
-   
-
     }
 
 
@@ -316,9 +314,12 @@ main{
       color: #fff;
 
     }
+
+
   .info{
 
     h1{
+
       padding:2rem 0;
       border-bottom: 8px solid transparent;
       border-image: linear-gradient(to right, #45c8cd, rgb(42, 42, 195), #4ce2b2);
@@ -334,11 +335,14 @@ main{
     
   }
   .info-sea{
+
     padding-bottom: 5rem;
+
   }
 
   .mission{
     
+
     h2{
       font-weight: 300;
       font-size: 38px;
@@ -350,15 +354,18 @@ main{
       
    
     }
+
     p{
       padding: 2rem 0;
       line-height: 1.7em;
     }
+
   }
  
 }
 
 footer{
+
   height: 30rem;
   display: flex;
   justify-content: space-between;
@@ -369,21 +376,27 @@ footer{
   padding-bottom: 2rem;
 
 .copy{
+
   padding-left: 5rem;
   font-size: 1.4rem;
+
 }
 
 
   .social-media{
+
     display: flex;
     gap: 1.5rem;
     font-size: 1.7rem;
     padding-right: 2rem;
 
+
     a{
+
       color: #fff;
 
       &:hover{
+
         text-shadow:0px 0px 30px rgb(151, 151, 148), 2px 2px 40px #e3e055,-2px -8px 30px #e3e055,5px 5px 40px #bd6dd1,-5px -10px 50px #bd6dd1 ;
         box-shadow: 0px 0px 30px rgb(151, 151, 148), 2px 2px 40px #e3e055,-2px -8px 30px #e3e055,5px 5px 40px #bd6dd1,-5px -10px 50px #bd6dd1;
         background-color: #878432;
@@ -399,20 +412,26 @@ footer{
   }
 
   @media (width<850px) {
+
     flex-direction: column;
     .social-media{
       justify-content: center;
       padding-right: 0;
       padding-bottom: 5rem;
+
     }
 
     .copy{
+
       padding-top: 3rem;
      margin-right: 5rem;
+
     }
+
   }
 
 .form{
+
   width: 20rem;
   height: 23rem;
   background: #e6e6e6;
@@ -425,7 +444,9 @@ footer{
   font-family: "Montserrat",sans-serif;
   position: relative;
 
+
   h2{
+
     margin: 10px 0;
     padding-bottom: 8px;
     width: 13rem;
@@ -435,6 +456,7 @@ footer{
   }
 
   input{
+
     width: 100%;
     padding: 6px;
     box-sizing: border-box;
@@ -447,12 +469,16 @@ footer{
     border-bottom:2px solid #bebed2;
 
     &:focus{
+
       border-bottom: 3px solid #78788c;
       background-color: #cdc5c5;
+
     }
+
   }
 
   p::before{
+
     content: attr(type);
     display: block;
     font-size: 14px;
@@ -461,6 +487,7 @@ footer{
   }
 
   button{
+
     float: right;
     padding: 5px 10px;
     font-family: "Montserrat",sans-serif;
@@ -476,7 +503,9 @@ footer{
      
       background: #78788c;
       color: #fff;
+
     }
+
   }
 
   div{
@@ -491,9 +520,12 @@ footer{
     padding: 10px 0 10px 15px;
     border-radius: 5px;
     box-shadow:10px 10px 40px -14px #000;
+
   }
   span{
+
     margin:0 5px 0 10px;
+    
   }
 
 
