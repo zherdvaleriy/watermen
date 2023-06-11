@@ -1,0 +1,90 @@
+
+
+#burger, [for=burger]{
+    // display: none;
+    visibility: hidden;
+}
+    
+    
+@media screen and (max-width:550px){
+    
+    .burg{
+        // display: block;
+        visibility: visible;
+        position: absolute;
+        width: 30px;
+        text-align: center;
+        right: 33px;
+        top: 27px;
+
+        &::before{
+            content: "\2630";
+            font-size: 30px;
+            
+            
+        }
+
+       
+    }
+
+
+    ul{
+        position: absolute;
+        top: 70px;
+        right: 150px;
+        background-color: rgb(67, 148, 219);
+       border-radius: 5px;
+        height: 10.5rem;
+        padding-right: 2rem;
+
+        
+    }
+
+    
+
+    .items{
+
+       position: absolute;
+       top: 130px;
+       left: -60px;
+    
+       
+    }
+
+    #burger:checked + label + ul{
+        display: block;
+        animation: action .7s ease;
+    }
+
+    #burger:checked +[for=burger]::before{
+        content: "\00d7";
+        font-size: 30px;
+        text-align: center;
+        border: 2px solid;
+        background-color: aquamarine;
+        
+        border-radius: 50%;
+        
+        display: block;
+        width: 50px;
+        height: 50px;
+        animation: spin 1.3s linear infinite;
+    }
+
+    @keyframes action {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes spin {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+}

@@ -37,7 +37,10 @@ header{
     z-index: 100;
 
  
-
+    nav{
+      display: flex;
+    
+    }
 
 
   h2{
@@ -48,11 +51,7 @@ header{
     // outline-offset: .2em;
     
   }
-
-
-
-    
-    
+ 
 
 
 
@@ -66,15 +65,13 @@ header{
     gap: 1em;
     position: relative;
   
-   
-
-
+  
   
 
     .container1{
       
       position: absolute;
-      top: 2.5rem; right: 0; bottom: 0; left: 4rem;
+      top: 3rem; right: 0; bottom: 0; left: 4rem;
       margin: auto;
       display: grid;
       place-items: center;
@@ -218,7 +215,7 @@ main{
    
 
 .banner{
-  @media (width<385px) {
+  @media (width<455px) {
     margin-left: 1.4rem;
     .banner__content{
       font-size: 40px;
