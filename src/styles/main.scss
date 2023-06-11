@@ -36,6 +36,8 @@ header{
     height: 11vh;
     z-index: 100;
 
+ 
+
 
 
   h2{
@@ -47,6 +49,13 @@ header{
     
   }
 
+
+
+    
+    
+
+
+
   ul{
 
     list-style-type: none;
@@ -56,6 +65,9 @@ header{
     display: flex;
     gap: 1em;
     position: relative;
+  
+   
+
 
   
 
@@ -64,7 +76,6 @@ header{
       position: absolute;
       top: 2.5rem; right: 0; bottom: 0; left: 4rem;
       margin: auto;
-      
       display: grid;
       place-items: center;
       background-color: $pri;
@@ -193,6 +204,9 @@ header{
       height: 14vh;
     }
   }
+
+
+
 
 }
 
