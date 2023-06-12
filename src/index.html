@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss">
     <link rel="stylesheet" href="/src/styles/_base.scss">
+    <link rel="stylesheet" href="/src/styles/burger.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Water World</title>
   </head>
@@ -17,8 +18,12 @@
       
       <div class="logo"><h2><i class="fa-solid fa-globe fa-spin"></i> water world </h2> </div>
       <nav>
-      
+
+        <input type="checkbox" id="burger">
+        <label class="burg" for="burger"></label>
+
         <ul>
+
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#mission">Mission</a></li>
@@ -80,7 +85,7 @@
       <h1 class="text-center">Did you know…? Marine Life / Interesting Ocean Facts…</h1>
       <p class="px-3 fs-4 pb-3 ">Sharks bite roughly <b>70</b> people each year worldwide, with perhaps <b>5-10</b>  fatalities, according to data compiled in the <em style="color:
       blue"> International Shark Attack File (ISAF)</em>. Although shark bites get a lot of attention, this is far less than the number of people injured each year by elephants, bees, crocodiles, lightning or many other natural dangers. On the other side of the ledger, we kill somewhere between <b>20-100</b> million sharks every year through fishing activities.</p>
-      <img src="https://www.marinebio.org/wp-content/uploads/2021/01/silas-baisch-OCzvgBqCJKY-unsplash-1200x675.jpg" alt="image">
+      <img src="/src/images/sea1-main.jpg" alt="image">
     </section>
 
 
@@ -92,7 +97,7 @@
         <br>
 
         Almost any shark 1.8 m or longer is a potential danger, but <b>three species have been identified repeatedly in fatal bites:</b> <u>great whites, tigers, and bull sharks</u>  All three are found worldwide, reach large sizes and eat large prey such as marine mammals or sea turtles. More bites on swimmers, free divers, scuba divers, surfers and boats have been reported for the great white shark than for any other species. However, some <b>80%</b> of all shark bites probably occur in the tropics and subtropics, where other shark species dominate and great white sharks are relatively rare.</p>
-      <img src="https://www.marinebio.org/wp-content/uploads/2021/01/iceberg-in-greenland-stockpack-unsplash-1200x900.jpg" alt="">
+      <img src="images/sea2-main.jpg" alt="arctic-image">
     </section>
 
 
@@ -119,7 +124,7 @@
         <br>
         
         The lowest known point on Earth, called the <em style="color: blue;">Challenger Deep</em>, is <b>11,034 m</b> deep, in the <em style="color: blue;">Marianas Trench</em> in the western <a class="paragraph" target="_blank" href="#">Pacific</a>. To get an idea of how deep that is, if you could take Mt. Everest and place it at the bottom of the trench there would still be over a mile of ocean above it. The Dead Sea is the Earth’s lowest land point with an elevation of <b>396 m</b> below sea level.</p>
-      <img src="https://marinebio.org/wp-content/uploads/2021/01/beach-2089935_1920-1024x683.jpg" alt="">
+      <img src="/src/images/sea3-main.jpg" alt="sea-image">
 
     </section>
 
@@ -135,28 +140,28 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1514787995333-ffa692d859a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1456&q=80" class="d-block w-100 h-100" alt="atlantic ocean">
+            <img src="/src/images/Slider-atlantic.jpg" class="d-block w-100 h-100" alt="atlantic ocean">
             <div class="carousel-caption d-none d-md-block">
              <a href="#"><h1>The Atlantic Ocean</h1></a>
               <p class="fs-3 mb-5 ">The second-largest ocean on Earth, the Atlantic drives our weather patterns, including hurricanes, and is home to many species from sea turtles to dolphins.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1587320754512-da4dbc717fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="d-block w-100 h-100" alt="indian ocean">
+            <img src="/src/images/Slider-indian.jpg" class="d-block w-100 h-100" alt="indian ocean">
             <div class="carousel-caption d-none d-md-block">
              <a href="indian2.html"><h1 class="text-primary">The Indian Ocean</h1></a>
               <p class="fs-3 mb-5 text-primary">The Indian Ocean is the third largest of the world's five oceans (after the Pacific Ocean and Atlantic Ocean, but larger than the Southern Ocean and Arctic Ocean).</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1579313811126-c370db380b15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1697&q=80" class="d-block w-100 h-100"  alt="pacific ocean">
+            <img src="/src/images/Slider-pacific.jpg" class="d-block w-100 h-100"  alt="pacific ocean">
             <div class="carousel-caption d-none d-md-block">
               <a href="#"><h1> The Pacific Ocean</h1></a>
               <p class="fs-3 mb-5">The Pacific Ocean is the largest and deepest ocean basin on Earth, covering more than 155 million square kilometers (60 million square miles) and averaging a depth of 4,000 meters (13,000 feet).</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1509326066092-14b2e882fe86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="d-block w-100 h-100"  alt="arctic ocean">
+            <img src="/src/images/Slider-arctic.jpg" class="d-block w-100 h-100"  alt="arctic ocean">
             <div class="carousel-caption d-none d-md-block">
               <a href="/src/arctic.html"><h1 >The Arctic Ocean</h1></a>
               <p class="fs-3 mb-3">The Arctic Ocean may be the world's smallest, but it's becoming a critical region as climate change warms it more quickly than anywhere else on Earth.</p>
